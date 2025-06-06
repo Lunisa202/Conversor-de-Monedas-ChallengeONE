@@ -28,10 +28,14 @@ El proyecto está organizado de la siguiente manera:
 
 ![Estructura-del-proyecto](images/estructura.png)
 
-
 - `Main.java`: Clase principal que inicia la aplicación y gestiona la interacción con el usuario.
-- `CurrencyConverter.java`: Contiene la lógica para realizar las conversiones de moneda.
-- `ExchangeRateAPI.java`: Maneja las solicitudes a la API externa para obtener las tasas de cambio actuales.
+- `Menu.java`: Clase que se encarga de mostrar al usuario las diferentes opciones que existen de conversión de monedas, así como también ejecuta la validación de los datos ingresados por el usuario.
+- `CurrencyConverterModel.java`: Es una clase récord (inmutable) que servirá para trasladar los datos obtenidos de la API que son formato JSON a un objeto Java.
+- `CurrencyConverter.java`: Es una clase interfaz que cuando se implemente podra hacer las conversiones de monedas.
+- `CurrencyConverterImpl.java`: Al implementar el método de CurrencyConverter, podrá obtener el objeto java CurrentConverterModel con los resultados del llamado a la API.
+- `ExchangeAPIClient.java`: Maneja las solicitudes a la API externa para obtener las tasas de cambio actuales.
+- `HTTPService.java`: Es una clase abstracta que guarda las funciones a implementar para poder realizar requests a la API externa.
+
 
 ## ⚙️ Requisitos
 
