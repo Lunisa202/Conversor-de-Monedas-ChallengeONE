@@ -33,7 +33,7 @@ El proyecto está organizado de la siguiente manera:
 - `CurrencyConverterModel.java`: Es una clase récord (inmutable) que servirá para trasladar los datos obtenidos de la API que son formato JSON a un objeto Java.
 - `CurrencyConverter.java`: Es una clase interfaz que cuando se implemente podra hacer las conversiones de monedas.
 - `CurrencyConverterImpl.java`: Al implementar el método de CurrencyConverter, podrá obtener el objeto java CurrentConverterModel con los resultados del llamado a la API.
-- `ExchangeAPIClient.java`: Maneja las solicitudes a la API externa para obtener las tasas de cambio actuales.
+- `ExchangeAPIClient.java`: Maneja las solicitudes a la API externa para obtener las conversiones de las monedas.
 - `HTTPService.java`: Es una clase abstracta que guarda las funciones a implementar para poder realizar requests a la API externa.
 
 
