@@ -40,17 +40,48 @@ El proyecto está organizado de la siguiente manera:
 
 ## 🧪 Ejecución del Proyecto
 
-1. Clona este repositorio en tu máquina local:
+### 1. Clona este repositorio en tu máquina local:
 
    ```bash
    git clone https://github.com/Lunisa202/Conversor-de-Monedas-ChallengeONE.git
    ```
 
-2. Abre el proyecto en tu IDE de Java preferido.
+### 2. Abre el proyecto en tu Intellij Idea.
 
-3. Ejecuta la clase `Main.java` para iniciar la aplicación.
+### 3. Descarga el .jar de GSON y agregalo como librería externa:
 
-4. Sigue las instrucciones en la consola para realizar conversiones de moneda.
+#### A. Copiar el archivo `.jar` al proyecto
+
+- Crea una carpeta llamada `lib` en la raíz del proyecto si no existe.
+- Copia el archivo `.jar` (por ejemplo, `gson-2.10.1.jar`) dentro de la carpeta `lib`.
+
+#### B. Abrir la configuración del proyecto
+
+- Abre IntelliJ IDEA y carga tu proyecto.
+- Ve al menú `File` → `Project Structure...` o usa el atajo `Ctrl + Alt + Shift + S`.
+
+#### C. Agregar el `.jar` como dependencia
+
+- En el panel izquierdo, selecciona `Modules`.
+- Haz clic en la pestaña `Dependencies`.
+- Presiona el botón `+` (agregar).
+- Selecciona `JARs or directories`.
+- Busca el archivo `.jar` que colocaste en la carpeta `lib`.
+- Asegúrate de que el "Scope" esté como `Compile`.
+- Haz clic en `Apply` y luego en `OK`.
+
+#### D. Verificar que se importó correctamente
+
+- Abre una clase en tu proyecto.
+- Intenta importar una clase desde la librería `.jar`. Por ejemplo:
+
+  ```java
+  import com.google.gson.Gson;
+
+
+### 4. Ejecuta la clase `Main.java` para iniciar la aplicación.
+
+### 5. Sigue las instrucciones en la consola para realizar conversiones de moneda.
 
 ## 📸 Capturas de Pantalla
 ### Ejecución de la clase main
@@ -59,8 +90,8 @@ El proyecto está organizado de la siguiente manera:
 ### Interfaz de linea de comandos
 ![Programa en ejecución-2](images/ejecucion.png)
 
-### Validación de las opciones a elegir por el usuario (siempre ser{a un número double)
-![Programa en ejecución-2](images/validacion-numeros.png)
+### Validación de las opciones a elegir por el usuario (siempre será un número double)
+![Programa en ejecución-2](images/validacion-monedas.png)
 
 
 ### Validación del monto de dinero ingresado por el usuario (siempre será un número double)
